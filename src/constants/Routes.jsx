@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import { PasswordResetPage } from '../pages/ForgotPassword';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import publicLinks from './links';
 
@@ -12,6 +13,7 @@ function BaseRouter() {
         <Routes>
           <Route exact path={publicLinks.home} element={<Home />} />
           <Route path={publicLinks.Login} element={<Login />} />
+          <Route path={publicLinks.forgotPassword} element={<ForgotPassword />} />
         </Routes>
       </Suspense>
     </Router>
